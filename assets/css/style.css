@@ -1,0 +1,220 @@
+body {
+    background-image: url(../images/bg.jpg);
+    background-repeat: round;
+    opacity: 0.9;
+    overflow: hidden;
+}
+.container {
+    width: 1400px;
+    margin: 0 auto;
+}
+.parent {
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .avatar {
+        display: flex;
+        align-items: center;
+        grid-area: 1 / 1 / 5 / 2;
+    }
+    .avatar img {
+        border-radius: 16px;
+    }
+    .nav {
+        height: 100%;
+        grid-area: 1 / 2 / 2 / 6; }
+    .nav__menu {
+        list-style-type: none;
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        font-family: 'Kdam Thmor Pro', sans-serif;
+        font-weight: 700;
+        font-size: 1.75rem;
+        align-items: center;
+    }
+    .footer { grid-area: 5 / 1 / 6 / 6; }
+    .footer__content {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100%;
+    }
+    .RSS__logo img {
+        width: 100px;
+        height: 90px;
+    }
+    .copyright {
+        color: white;
+    }
+    .icons {
+        display: flex;
+        column-gap: 20px;
+        color: white;
+        transition: .2s;
+    }
+    .icons i {
+        font-size: 2em;
+    }
+    .icons i:hover {
+        position: relative;
+        bottom: 2px;
+    }
+    .card {
+         grid-area: 2 / 2 / 5 / 3; 
+        }
+        .card__info {
+            text-align: center;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 90%;
+            height: 90%;
+            margin: auto;
+            background-color: rgba(255, 255, 0, 0.5);
+            border-radius: 15px;
+            transition: .3s ease-in;
+            font-family: 'Kdam Thmor Pro', sans-serif;
+            font-weight: 700;
+            font-size: 0.8rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            margin-left: 30%;
+        }
+        .card__info:hover {
+            transition: .3s ease-in;
+            background-color: rgba(255, 255, 0, 0.4);
+        }
+        .card__info h2 {
+            font-size: 2.7rem;
+        }
+        .card__info p {
+            font-size: 1.1rem;
+        }
+        .card__info button {
+            color: white;
+            padding: 10px 30px;
+            border-radius: 25px;
+            background-color: black;
+            backdrop-filter: blur(3px);
+            transition: .3s ease-in;
+            
+        }
+        .card__info button:hover,
+        .card__info button:active {
+            position: relative;
+            top: 2px;
+            transition: .3s ease-in;
+        }
+    .card__c { grid-area: 2 / 3 / 5 / 4; }
+    .card__code {
+            text-align: center;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 90%;
+            height: 90%;
+            margin: auto;
+            background-color: rgba(255, 255, 0, 0.5);
+            border-radius: 15px;
+            transition: .3s ease-in;
+            font-family: 'Kdam Thmor Pro', sans-serif;
+            font-weight: 700;
+            font-size: 0.8rem;
+            display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-left: 30%;
+        }
+        .card__code:hover {
+            transition: .3s ease-in;
+            background-color: rgba(255, 255, 0, 0.4);
+        }
+        .card__code h2 {
+            font-size: 2.7rem;
+            line-height: 1.49;
+        }
+        .card__code button {
+            color: white;
+            padding: 10px 30px;
+            border-radius: 25px;
+            background-color: black;
+            backdrop-filter: blur(3px);
+            transition: .3s ease-in;
+            margin-bottom: 7%;
+        }
+        .card__code button:hover,
+        .card__code button:active {
+            position: relative;
+            top: 2px;
+            transition: .3s ease-in;
+        }
+    .card__p { grid-area: 2 / 4 / 5 / 5; }
+    .card__projects {
+        text-align: center;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 90%;
+        height: 90%;
+        margin: auto;
+        background-color: rgba(255, 255, 0, 0.5);
+        border-radius: 15px;
+        transition: .3s ease-in;
+        font-family: 'Kdam Thmor Pro', sans-serif;
+        font-weight: 700;
+        font-size: 0.8rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-left: 30%;
+    }
+    .card__projects:hover {
+        transition: .3s ease-in;
+        background-color: rgba(255, 255, 0, 0.4);
+    }
+    .card__projects h2 {
+      padding-top: 15%;
+        font-size: 2.7rem;
+        line-height: 1.49;
+    }
+    .card__projects button {
+        color: white;
+        position: relative;
+        bottom: 1px;
+        padding: 10px 30px;
+        border-radius: 25px;
+        background-color: black;
+        backdrop-filter: blur(3px);
+        transition: .3s ease-in;
+    }
+    .card__projects button:hover,
+    .card__projects button:active {
+        position: relative;
+        top: 2px;
+        transition: .3s ease-in;
+    }
+    .projects__list a {
+        color: black;
+        font-size: 1.1rem;
+    }
+    code {
+        font-size: 1.1rem;
+    }
+    .telegram__hover {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        background-color: red;
+    }

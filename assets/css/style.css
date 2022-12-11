@@ -480,8 +480,11 @@ details[open] {
 }
 .education-wrapper li p {
   font-size: 20px;
-  flex: 1 0 200px;
+  flex: 1 0 150px;
   text-align: center;
+}
+.education-wrapper .education-list__item {
+  border-bottom: 2px solid #fff;
 }
 
 .language-wrapper {

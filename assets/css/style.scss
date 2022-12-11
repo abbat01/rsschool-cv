@@ -405,7 +405,7 @@ details[open] {
     &:hover::before {
         height: 100%;
     }
-    .projects-list__item--desc {
+    .projects-desc {
         position: absolute;
         text-align: center;
         top: 65%;
@@ -415,7 +415,7 @@ details[open] {
         opacity: 0;
         width: 100%;
     }
-    &:hover .projects-list__item--desc {
+    &:hover .projects-desc {
         top: 50%;
         opacity: 1;
     }

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#000000" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <title>CV for RSSchool</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-wrapper">
+                <a href="#" class="logo"><img src="./assets/svg/logo.svg" alt="logo icon"></a>
+                <nav class="nav-menu">
+                    <ul class="nav-list">
+                        <li class="nav-list__item active"><a href="#main" class="nav-list__link">Home</a></li>
+                        <li class="nav-list__item"><a href="#skills" class="nav-list__link">Skills</a></li>
+                        <li class="nav-list__item"><a href="#projects" class="nav-list__link">Projects</a></li>
+                    </ul>
+                </nav>
+                <div class="social">
+                    <ul class="social-list">
+                        <li class="social-list__item"><a href="https://www.linkedin.com/in/andrey-abaturov-584849231/" target="_blank"><img src="./assets/svg/nav-icon1.svg" alt="linkedin icon"></a></li>
+                        <li class="social-list__item"><a href="https://telegram.me/abbat002" target="_blank"><img src="./assets/svg/nav-icon2.svg" alt="telegram icon"></a></li>
+                        <li class="social-list__item"><a href="https://www.instagram.com/andrey_abbat/" target="_blank"><img src="./assets/svg/nav-icon3.svg" alt="inst icon"></a></li>
+                    </ul>
+                </div>
+                <div class="hamb">
+                    <div class="hamb__field" id="hamb">
+                      <span class="bar"></span> <span class="bar"></span>
+                      <span class="bar"></span>
+                    </div>
+                  </div>
+                  <div class="popup" id="popup">
+                    <ul class="popup-list">
+                        <li class="popup-list__item"><a href="#main" class="nav-list__link">Home</a></li>
+                        <li class="popup-list__item"><a href="#skills" class="nav-list__link">Skills</a></li>
+                        <li class="popup-list__item"><a href="#projects" class="nav-list__link">Projects</a></li>
+                        <li class="popup-list__item">
+                            <ul class="social-list">
+                                <li class="social-list__item popup-social"><a href="https://www.linkedin.com/in/andrey-abaturov-584849231/" target="_blank"><img src="./assets/svg/nav-icon1.svg" alt="linkedin icon"></a></li>
+                                <li class="social-list__item popup-social"><a href="https://telegram.me/abbat002" target="_blank"><img src="./assets/svg/nav-icon2.svg" alt="telegram icon"></a></li>
+                                <li class="social-list__item popup-social"><a href="https://www.instagram.com/andrey_abbat/" target="_blank"><img src="./assets/svg/nav-icon3.svg" alt="inst icon"></a></li>
+                            </ul>
+                        </li>
+                        <li class="popup-list__item"><button class="button button-popup">Let's connect <img src="./assets/svg/arrow2.svg" alt="arrow icon"></button></li>
+                    </ul>
+                  </div>
+                <button class="button button-connect">Let's connect</button>
+            </div>
+        </div>
+    </header>
+    <main class="main" id="main">
+        
+        <section class="hero">
+            <div class="profile-card">
+                <div class="circle" id="first-circle"></div>
+                <div class="circle" id="second-circle"></div>
+            </div>
+            <p class="profile-name">Hi, I'm <span>Andrey</span> 😁</p>
+            <h1 class="profile-title">Front-End Developer</h1>
+            <div class="buttons">
+                <a class="button button-message" href="https://telegram.me/abbat002" target="_blank">Message me</a>
+                <a class="button button-cv" type="button" href="./assets/img/my-cv-4 (1).pdf" download>Download CV</a>
+            </div>
+            <details>
+                <summary>More about me</summary>
+                <div class="profile-desc">
+                    <p>I am a Front-end developer based in Minsk, Belarus</p>
+                    <p>I have knowledge of Wepback, Typescript/Javascript, React, CSS (SCSS), NextJS</p>
+                    <p>In addition to my technical skills, I bring along professional work experience as an builder where I learned about the system development</p>
+                    <p>I am looking forward to working in teams as well as individually. I am not only willing to deepen my knowledge but I also want to apply them to the real products.</p>
+                </div>
+            </details>
+            
+        </section>
+        <section class="skills" id="skills" name="skills">
+            <div class="container">
+                <div class="skills-wrapper">
+                    <h2>Why you need to hire me?</h2>
+                    <p>Hard skills</p>
+                    <ul class="skills-list">
+                        <li class="skills-list__item">HTML5</li>
+                        <li class="skills-list__item">CSS3</li>
+                        <li class="skills-list__item">SCSS</li>
+                        <li class="skills-list__item">Bootstrap</li>
+                        <li class="skills-list__item">Tailwind</li>
+                        <li class="skills-list__item">JavaScript</li>
+                        <li class="skills-list__item">React</li>
+                        <li class="skills-list__item">TypeScript</li>
+                        <li class="skills-list__item">Redux</li>
+                        <li class="skills-list__item">Next JS</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="projects" id="projects">
+            <div class="container">
+                <div class="projects-wrapper">
+                    <h2>Projects</h2>
+                    <ul class="projects-list">
+                        <li class="projects-list__item" id="project1" onclick="location.href='https://abbat01.github.io/course__60__days/'">
+                            <div class="projects-list__item--desc">
+                                <h4>Business Startup</h4>
+                                <p>Design & Development</p>
+                                <p>HTML5, CSS3(SCSS)</p>
+                            </div>
+                        </li>
+                        <li class="projects-list__item" id="project2" onclick="location.href='https://abbat01.github.io/virtual-keyboard/'">
+                            <div class="projects-list__item--desc">
+                                <h4>React keyboard practice</h4>
+                                <p>Design & Development</p>
+                                <p>React, CSS3(SCSS)</p>
+                            </div>
+                        </li>
+                        <li class="projects-list__item" id="project3" onclick="location.href='https://abbat01.github.io/wheel-of-fortune/wheel/'">
+                            <div class="projects-list__item--desc">
+                                <h4>Wheel of fortune</h4>
+                                <p>Design & Development</p>
+                                <p>HTML5, CSS3(SCSS), native JavaScript</p>
+                            </div>
+                        </li>
+                        <!-- <li class="projects-list__item" id="project4" onclick="location.href='https://abbat01.github.io/course__60__days/'">
+                            <div class="projects-list__item--desc">
+                                <h4>Business Startup</h4>
+                                <p>Design & Development</p>
+                                <p>HTML5, CSS3(SCSS), native JavaScript</p>
+                            </div>
+                        </li> -->
+                        <li class="projects-list__item" id="project5" onclick="location.href='https://abbat01.github.io/dynamicIsland/'">
+                            <div class="projects-list__item--desc">
+                                <h4>CSS practice</h4>
+                                <p> Design & Development</p>
+                                <p>CSS3</p>
+                            </div>
+                        </li>
+                        <li class="projects-list__item" id="project6" onclick="location.href='https://abbat01.github.io/personal-portfolio/'">
+                            <div class="projects-list__item--desc">
+                                <h4>Recent portfolio</h4>
+                                <p>Design & Development</p>
+                                <p>HTML5, CSS3(SCSS), React</p>
+                            </div>
+                        </li>
+                        <li class="projects-list__item" id="project7" onclick="location.href='https://abbat01.github.io/3d-scroll-web-master/'">
+                            <div class="projects-list__item--desc">
+                                <h4>GSAP JavaScript practice</h4>
+                                <p>Design & Development</p>
+                                <p>HTML5, CSS3(GSAP,SCSS), native JavaScript</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="code">
+            <div class="container">
+                <div class="code-wrapper">
+                    <h2>Code example</h2>
+                    <div class="code-list">
+                        <div class="code-list__item">
+                            <p>Human readable duration format</p>
+                            <code>
+                                const delegates = [<br>
+                                { s: 'year', v: 60 * 60 * 24 * 365 },<br>
+                                { s: 'day', v: 60 * 60 * 24 },<br>
+                                { s: 'hour', v: 60 * 60 },<br>
+                                { s: 'minute', v: 60 },<br>
+                                { s: 'second', v: 1 }<br>
+                            ];<br>
+                            <br>
+                            function formatDuration (seconds) {<br>
+                                if (!seconds) return 'now';<br>
+                                <br>
+                                return delegates.reduce((ret, dg, idx) => {<br>
+                                const val = Math.floor(seconds / dg.v);<br>
+                                if (!val) return ret;<br>
+                                seconds -= dg.v * val;<br>
+                                const str = val > 1 ? dg.s + 's' : dg.s;<br>
+                                const add = !ret ? '' : (seconds > 0 ? ', ' : ' and ');<br>
+                                return ret + add + `${val} ${str}`;<br>
+                                }, '');<br>
+                            }
+                            </code>
+                        </div>
+                        <div class="code-list__item">Coming soon...</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="education">
+            <div class="container">
+                <div class="education-wrapper">
+                    <h2>Education</h2>
+                    <ul class="education-list">
+                        <li class="education-list__item">
+                            <p class="education-list__item--date">Dec 2022 - now</p>
+                            <p class="education-list__item--progress">In progress</p>
+                            <p class="education-list__item--course">Javascript/Front-End</p>
+                            <p class="education-list__item--schoolname">Rolling Scopes School</p>
+                        </li>
+                        <hr>
+                        <li class="education-list__item">
+                            <p class="education-list__item--date">Dec 2021 - Feb 2022</p>
+                            <p class="education-list__item--progress">Certificate</p>
+                            <p class="education-list__item--course">Javascript/Front-End</p>
+                            <p class="education-list__item--schoolname">Rolling Scopes School</p>
+                        </li>
+                        <hr>
+                        <li class="education-list__item">
+                            <p class="education-list__item--date">Sep 2017 - May 2021</p>
+                            <p class="education-list__item--progress">Completed</p>
+                            <p class="education-list__item--course">Construction</p>
+                            <p class="education-list__item--schoolname">Pinsk Agrarian Technical College</p>
+                        </li>
+                        <hr>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="language">
+            <div class="container">
+                <div class="language-wrapper">
+                    <h2>I can speak with you on this languages</h2>
+                    <ul class="language-list">
+                        <li class="language-list__item">
+                            <p class="language-name">English</p>
+                            <p class="language-knowledge">Pre-intermediate</p>
+                        </li>
+                        <li class="language-list__item">
+                            <p class="language-name">Russian</p>
+                            <p class="language-knowledge">Mastery</p>
+                        </li>
+                        <li class="language-list__item">
+                            <p class="language-name">Belorussian</p>
+                            <p class="language-knowledge">Intermediate</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <div class="bg-animation">
+            <div id="stars"></div>
+            <div id="stars2"></div>
+            <div id="stars3"></div>
+            <div id="stars4"></div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="creation-date">© 2022 by Abaturov A.</div>
+                <div class="github"><a href="https://github.com/abbat01" target="_blank"><img src="./assets/svg/github.svg" alt="github icon"></a></div>
+                <div class="rs"><a href="https://rs.school" target="_blank"><img src="./assets/svg/rs.svg" alt="rs icon"></a></div>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
